@@ -1,0 +1,23 @@
+{% extends "Main/base.html" %}
+{% block title %}Login{% endblock %}
+{% block login %}
+
+    {%  if forms.error %}
+        <p class="error">Invalid username or/and password</p>
+    {% endif %}
+
+    <form action="" method="post">{% csrf_token %}
+    <label for="username">username:</label>
+    <input type="text" name="username" value="" id="username">
+    <label for="password">Password:</label>
+    <input type="password" name="password" value="" id="password">
+
+    <input type="submit" name="lgn" value="login" id="login">
+
+
+
+
+
+    </form>
+
+{% endblock %}

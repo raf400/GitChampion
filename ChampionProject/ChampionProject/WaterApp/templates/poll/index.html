@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+	<title>H2knO - {% block pagetitle %} {% endblock %}</title>
+	<meta charset=utf-8 />
+	
+	<link rel="stylesheet" href="../../static/styles.css">
+
+</head>
+
+<body>
+	<header class = "mainHead">
+		<p class='logoText'><img src='../../static/H2knO.png'/></p>
+
+		<nav><ul>
+				<li><a href="{% url 'accounts' %}">Accounts Management</a></li>
+				<li><a href='{% url 'questions' %}'>Questions Management</a></li>
+				<li><a href='{% url 'bulletin' %}'>Performance Management</a></li>
+            </ul></nav>
+
+	</header>
+
+	<footer>
+    <div id="welcome">
+        <p>|</p>
+
+            <div id="user_info">
+                 <h2>Welcome {{ first_name }}</h2>
+            </div>
+
+    </div>
+	<div class="mainContent">
+
+		<h2>{% block title %}{% endblock %}</h2>
+        <div id="create">
+
+                {% block create %}{% endblock %}
+        </div>
+
+        <div id="update">
+
+                {% block update %}{% endblock %}
+
+        </div>
+
+        <div id="schedule">
+            {% block schedule %}{% endblock %}
+        </div>
+
+        <div id="user">
+
+                {% block user %}{% endblock %}
+
+        </div>
+
+        <div id="performance">
+            {% block performance %}{% endblock %}
+        </div>
+        <div id="return">
+            <h3>{% block return %}{% endblock %}</h3>
+        </div>
+    </div>
+
+    <div class="logout">
+        <p><a href="{% url 'logout' %}">Logout</a></p>
+
+    </div>
+    </footer>
+</body>
+</html>
+
+
+				
+
+	
+		
+
+

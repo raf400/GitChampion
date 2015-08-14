@@ -1,0 +1,39 @@
+{% extends "poll/index.html" %}
+
+{% block pagetitle %}Questions{% endblock%}
+
+{% block title %}Questions management{% endblock %}
+
+{% block create %}
+    <p><a href="{% url 'createQuestion' %}">Create new question</a></p>
+    {%  block createQuestion %}
+
+    {% endblock %}
+{% endblock %}
+
+{% block update %}
+    <p><a href="{% url 'updateQuestion' %}">Update/Delete a question</a></p>
+    {% block updateQuestion %}
+
+    {% endblock %}
+{% endblock %}
+
+{% block delete %}
+     <p><a href="{% url 'deleteQuestion' %}">Delete a question</a></p>
+    {% block deleteQuestion %}
+
+    {% endblock %}
+{% endblock %}
+
+{% block schedule %}
+    <a href="{% url 'scheduleQuestion' %}">List of questions</a></p>
+    {% block scheduleQuestion %}
+
+    {% endblock %}
+{% endblock %}
+
+{% block return %}
+<ul>
+    <li><a href="{% url 'index' %}">Cancel</a></li>
+</ul>
+{% endblock %}

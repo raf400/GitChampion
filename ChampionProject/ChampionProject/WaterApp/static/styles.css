@@ -1,0 +1,73 @@
+body{
+	color: #5cd5fd;
+	font-size:80%;
+	font-family: 'Arial', sans-serif;
+	line-height:1.5;
+	text-align:left;
+}
+
+a{
+	text-decoration:none;
+}
+
+.logoText p{
+	
+}
+
+a:link, a:visited{
+	color:#1a94d6;
+}
+
+a:hover, a:active{
+ color:#797979;
+}
+
+.body{
+	margin:0 auto;
+	width:75%;
+	clear:both;
+}
+
+.mainContent {
+
+}
+
+.mainHead nav{
+	background-color:#797979;
+	height: 40%;
+}
+
+.mainHead nav ul{
+	list-style: none;
+	margin:0 auto;
+}
+
+.mainHead nav ul li{
+	float:left;
+	display:inline;
+}
+
+.mainHead nav a:link, .mainHead nav a:visited{
+	color:#fff
+	display:inline-block;
+	padding: 10px 25px;
+	height: 20px;
+}
+
+.mainHead nav.active a:link,
+.mainHead nav.active a:visited,
+.mainHead nav a:hover,
+.mainHead  nav a:active{
+	background-color: #04bae3;
+	text-shadow:none;
+}
+
+.logout p a{
+   background-color: #04bae3;
+}
+
+
+
+
+
+

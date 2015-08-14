@@ -1,0 +1,13 @@
+{%  extends "poll/QuestionsManagement/questions.dj.html" %}
+{% block scheduleQuestion %}
+    <form>
+        <h3>Select questions to be posted</h3>
+        <ol>
+            {% for question in Questions %}
+            <li><input type="checkbox" name="option" value="" id="question"/>{{Questions.question}}</li>
+            {% endfor %}
+        </ol>
+    </form>
+
+
+{% endblock %}

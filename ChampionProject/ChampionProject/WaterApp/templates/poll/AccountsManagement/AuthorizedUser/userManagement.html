@@ -1,0 +1,14 @@
+{% extends 'poll/AccountsManagement/accounts.dj.html' %}
+{% block user %}
+    <p><a href="{% url 'createUser' %}">Create new authorized user record</a></p>
+    {%  block createUser %}
+
+    {% endblock %}
+
+    <p><a href="{% url 'updateUser' %}">Update/Delete an authorized user record</a></p>
+    {% block updateUser %}
+
+    {% endblock %}
+{% endblock %}
+
+

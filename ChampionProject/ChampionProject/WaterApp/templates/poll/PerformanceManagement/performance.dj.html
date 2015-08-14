@@ -1,0 +1,17 @@
+{% extends "poll/index.html" %}
+{% block title %}<p>Performance Management</p>{% endblock %}
+{% block performance %}
+
+    <form action="" method="post">{% csrf_token %}
+        <input id="id_id" maxlength="12" name="id2" type="text"/>
+        <input type="submit" name="btn" text="Search id" value="search" id="id">
+            <ul>
+                {{form.as_p }}
+             </ul>
+    </form>
+{% endblock %}
+{% block return %}
+<ul>
+    <li><a href="{% url 'index' %}">Cancel</a></li>
+</ul>
+{% endblock %}

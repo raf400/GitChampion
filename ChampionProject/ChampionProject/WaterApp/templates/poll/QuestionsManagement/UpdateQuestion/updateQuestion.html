@@ -1,0 +1,12 @@
+{%  extends "poll/QuestionsManagement/questions.dj.html" %}
+{% block updateQuestion %}
+ <form action="" method="post">{% csrf_token %}
+        <input id="id_id" maxlength="12" name="id2" type="text" />
+        <input type="submit" name="btn" text="Search id" value="search" id="id">
+        <ul>
+            {{form.as_ul }}
+        </ul>
+        <input type="submit" name="btn" text="Update question" value="update">
+        <input type="submit" name="btn" text="Update question" value="delete">
+        </form>
+{% endblock %}
