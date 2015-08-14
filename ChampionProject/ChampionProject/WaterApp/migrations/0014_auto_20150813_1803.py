@@ -14,6 +14,6 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='questions',
             name='id',
-            field=models.IntegerField(serialize=False, primary_key=True),
+            field=models.CharField(max_length=12, serialize=False, primary_key=True),
         ),
     ]

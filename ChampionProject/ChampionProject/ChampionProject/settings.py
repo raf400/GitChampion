@@ -13,6 +13,8 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 from django.core.management import templates
+import dj_database_url
+
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -85,14 +87,17 @@ LOGIN_REDIRECT_URL = '/'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'BasicDatabase',
-        'USER': 'raf',
-        'PASSWORD': '12345',
-        'HOST': 'localhost',
+        'NAME': 'dbejqeqkjb2odq',
+        'USER': 'meziysqghiyxnb',
+        'PASSWORD': 'aZC-CeUOV3-C_bMDYk5-GlyOqR',
+        'HOST': 'ec2-54-204-26-8.compute-1.amazonaws.com',
         'PORT': '5432',
     }
 }
-
+"""
+DATABASES['default']= dj_database_url.config()
+DATABASES['default']['ENGINE'] = 'django.db.backends.postgresql_psycopg2'
+"""
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
